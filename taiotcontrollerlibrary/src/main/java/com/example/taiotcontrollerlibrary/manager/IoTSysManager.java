@@ -11,6 +11,7 @@ import android.content.Context;
 import com.qualcomm.qti.iotcontrollersdk.controller.IoTService;
 import com.qualcomm.qti.iotcontrollersdk.controller.interfaces.IoTCompletionCallback;
 import com.qualcomm.qti.iotcontrollersdk.iotsys.resource.attributes.AVSOnboardingErrorAttr.Error;
+import com.qualcomm.qti.iotcontrollersdk.model.iotsys.IoTSysInfo;
 import com.qualcomm.qti.iotcontrollersdk.repository.IoTDevice;
 import com.qualcomm.qti.iotcontrollersdk.repository.IoTBluetoothDevice;
 import com.qualcomm.qti.iotcontrollersdk.repository.IoTDevice.IoTSysUpdatesDelegate;
@@ -192,6 +193,46 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
   public void setZigbeeName(String host, String name, int id, IoTCompletionCallback callback) {
     IoTService.getInstance().setZigbeeName(host, name, id, callback);
   }
+
+    public void rebootDevice(String id, IoTCompletionCallback callback){
+        IoTService.getInstance().rebootDevice(id, callback);
+    }
+
+    public void startAvsOnBoarding(String host, IoTCompletionCallback callback){
+        IoTService.getInstance().startAvsOnBoarding(host, callback);
+    }
+
+    public String getFirmwareVersion(String host){
+        return IoTService.getInstance().getFirmwareVersion(host);
+    }
+
+    public String getModel(String host){
+        return IoTService.getInstance().getModel(host);
+    }
+
+    public String getManufacturer(String host){
+        return IoTService.getInstance().getManufacturer(host);
+    }
+
+    public String getWifiIPAddress(String host){
+        return IoTService.getInstance().getWifiIPAddress(host);
+    }
+
+    public String getWifiMacAddress(String host){
+        return IoTService.getInstance().getWifiMacAddress(host);
+    }
+
+    public String getEthernetIPAddress(String host){
+        return IoTService.getInstance().getEthernetIPAddress(host);
+    }
+
+    public String getEthernetMacAddress(String host){
+        return IoTService.getInstance().getEthernetMacAddress(host);
+    }
+
+    public IoTSysInfo getIoTSysInfo(String host){
+        return IoTService.getInstance().getIoTSysInfo(host);
+    }
 
   @Override
   public void didChangeName(String name) {
