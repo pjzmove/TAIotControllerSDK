@@ -194,45 +194,45 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
     IoTService.getInstance().setZigbeeName(host, name, id, callback);
   }
 
-    public void rebootDevice(String id, IoTCompletionCallback callback){
-        IoTService.getInstance().rebootDevice(id, callback);
-    }
-
-    public void startAvsOnBoarding(String host, IoTCompletionCallback callback){
-        IoTService.getInstance().startAvsOnBoarding(host, callback);
-    }
-
-    public String getFirmwareVersion(String host){
-        return IoTService.getInstance().getFirmwareVersion(host);
-    }
-
-    public String getModel(String host){
-        return IoTService.getInstance().getModel(host);
-    }
-
-    public String getManufacturer(String host){
-        return IoTService.getInstance().getManufacturer(host);
-    }
-
-    public String getWifiIPAddress(String host){
-        return IoTService.getInstance().getWifiIPAddress(host);
-    }
-
-    public String getWifiMacAddress(String host){
-        return IoTService.getInstance().getWifiMacAddress(host);
-    }
-
-    public String getEthernetIPAddress(String host){
-        return IoTService.getInstance().getEthernetIPAddress(host);
-    }
-
-    public String getEthernetMacAddress(String host){
-        return IoTService.getInstance().getEthernetMacAddress(host);
-    }
-
-    public IoTSysInfo getIoTSysInfo(String host){
-        return IoTService.getInstance().getIoTSysInfo(host);
-    }
+//    public void rebootDevice(String id, IoTCompletionCallback callback){
+//        IoTService.getInstance().rebootDevice(id, callback);
+//    }
+//
+//    public void startAvsOnBoarding(String host, IoTCompletionCallback callback){
+//        IoTService.getInstance().startAvsOnBoarding(host, callback);
+//    }
+//
+//    public String getFirmwareVersion(String host){
+//        return IoTService.getInstance().getFirmwareVersion(host);
+//    }
+//
+//    public String getModel(String host){
+//        return IoTService.getInstance().getModel(host);
+//    }
+//
+//    public String getManufacturer(String host){
+//        return IoTService.getInstance().getManufacturer(host);
+//    }
+//
+//    public String getWifiIPAddress(String host){
+//        return IoTService.getInstance().getWifiIPAddress(host);
+//    }
+//
+//    public String getWifiMacAddress(String host){
+//        return IoTService.getInstance().getWifiMacAddress(host);
+//    }
+//
+//    public String getEthernetIPAddress(String host){
+//        return IoTService.getInstance().getEthernetIPAddress(host);
+//    }
+//
+//    public String getEthernetMacAddress(String host){
+//        return IoTService.getInstance().getEthernetMacAddress(host);
+//    }
+//
+//    public IoTSysInfo getIoTSysInfo(String host){
+//        return IoTService.getInstance().getIoTSysInfo(host);
+//    }
 
   @Override
   public void didChangeName(String name) {
