@@ -3,9 +3,6 @@
 
 This is the Tymphany SmartSDK document for Android, based on the provided IoTControllerSDK source code from Qualcomm. The document for the SDK is based on the IoTSysManager class and the classes below the Onboarding package, and add the bleonboarding package to control wifi BLE onboarding, which are encapsulated in the App layer. 
 
-## How to open document
-The Tymphany Android SmartSDK document is generated in html. To open the document, please **download this repo** and find source file index.html under resource folder /docs, **double click file index.html** will open document in web browser.
-
 ## SDK Document Description
 * The SDK document consists of two parts, wifi BLE onboarding and IoTSysManager. Both of these parts are under the manager package, and this part is in the App layer.
 
