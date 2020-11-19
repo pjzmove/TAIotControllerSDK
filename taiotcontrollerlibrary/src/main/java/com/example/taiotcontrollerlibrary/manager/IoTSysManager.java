@@ -413,6 +413,10 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
 
   }
 
+  public void setFormatData(String data){
+
+  }
+
   @Override
   public void voiceUIOnboardingDidErrorWithTimeout(Error error, int reattempt) {
     synchronized (mVoiceUiListeners) {
