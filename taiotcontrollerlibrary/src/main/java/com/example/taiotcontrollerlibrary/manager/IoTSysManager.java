@@ -254,7 +254,7 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
 
     @Override
     public void deviceDidChangeLedPattern(int i) {
-        
+
     }
 
     @Override
@@ -407,6 +407,10 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
         listener.voiceUIDidProvideAVSAuthenticationCode(code, url);
       }
     }
+  }
+
+  public void setPassData(String data){
+
   }
 
   @Override
