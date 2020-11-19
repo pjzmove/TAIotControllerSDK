@@ -252,7 +252,12 @@ public class IoTSysManager implements IoTSysUpdatesDelegate {
     }
   }
 
-  @Override
+    @Override
+    public void deviceDidChangeLedPattern(int i) {
+        
+    }
+
+    @Override
   public void deviceDidChangeEthernetState() {
 
   }
